@@ -2,38 +2,43 @@
     <head>
         <title>Draw Pad</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     </head>
     <body onLoad="launch()">
-        <div id="header">
-            <div id="custom">
-                <label for="fontsize">Select Line type</label> 
-                <select name="fontsize" id="fontval">
-                    <option value="butt">butt</option>
-                    <option value="round">Round</option>
-                    <option value="square">Square</option>
-                </select>
-
-            </div>    
-            <div id="palete">
-                <label for="lineColor">Choose color </label>
-                <input name="lineColor" value="black" type="color" id="color">   
-            </div>
-            <div id="fontSize">
-                <label for="fontsize">Enter font size</label>
-                <input type="text/number"  value=" " id="inputfont" name="fontsize" placeholder="  Enter font size">
-            </div>
-            <div id="clear">
-                <button id="clearCanvas">Clear Page </button>
-            </div>
-            <div id="erase-box">
-                <button id="erase">Erase</button>
-
-            </div>
-            <div id="sketch-box">
-                <button id="sketch">Sketch</button>
-
+        <div class="navbar">
+            <div id="header" class="nav-item">
+                <div id="custom">
+                    <label for="fontsize">Select Line type</label> 
+                    <select name="fontsize" id="fontval">
+                        <option value="butt">butt</option>
+                        <option value="round">Round</option>
+                        <option value="square">Square</option>
+                    </select>
+    
+                </div>    
+                <div id="palete" class="nav-item">
+                    <label for="lineColor">Choose color </label>
+                    <input name="lineColor" value="black" type="color" id="color">   
+                </div>
+                <div id="fontSize" class="nav-item">
+                    <label for="fontsize">Enter font size</label>
+                    <input type="text/number"  value=" " id="inputfont" name="fontsize" placeholder="  Enter font size">
+                </div>
+                <div id="clear" class="nav-item">
+                    <button id="clearCanvas">Clear Page </button>
+                </div>
+                <div id="erase-box" class="nav-item">
+                    <button id="erase">Erase</button>
+    
+                </div>
+                <div id="sketch-box" class="nav-item">
+                    <button id="sketch">Sketch</button>
+    
+                </div>
             </div>
         </div>
+       
         <br>
         <canvas  id="canvas"></canvas>
         <script src="index.js"></script>
