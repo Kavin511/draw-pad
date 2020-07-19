@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Draw Pad</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onLoad="launch()">
+        <div id="header">
+            <div id="custom">
+                <label for="fontsize">Select Line type</label> 
+                <select name="fontsize" id="fontval">
+                    <option value="butt">butt</option>
+                    <option value="round">Round</option>
+                    <option value="square">Square</option>
+                </select>
+
+            </div>    
+            <div id="palete">
+                <label for="lineColor">Choose color </label>
+                <input name="lineColor" value="black" type="color" id="color">   
+            </div>
+            <div id="fontSize">
+                <label for="fontsize">Enter font size</label>
+                <input type="text/number"  value=" " id="inputfont" name="fontsize" placeholder="  Enter font size">
+            </div>
+            <div id="clear">
+                <button id="clearCanvas">Clear Page </button>
+            </div>
+            <div id="erase-box">
+                <button id="erase">Erase</button>
+
+            </div>
+            <div id="sketch-box">
+                <button id="sketch">Sketch</button>
+
+            </div>
+        </div>
+        <br>
+        <canvas  id="canvas"></canvas>
+        <script src="index.js"></script>
+    </body>
+
+</html>
