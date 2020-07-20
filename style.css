@@ -111,4 +111,6 @@ canvas{
 }
 body{
     background-color: rgb(247, 245, 245);
+    position: fixed;
+    height: 100%;
 }
