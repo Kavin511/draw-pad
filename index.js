@@ -61,11 +61,12 @@ function draw(e)
    ctx.lineWidth=size;
    console.log(ctx.lineWidth);
    ctx.lineCap=check.value;
-   ctx.lineTo(e.clientX,e.clientY)
+   ctx.lineTo((e.clientX- this.offsetLeft)*this.width/this.clientWidth,(e.clientY-this.offsetTop)*this.height/this.clientHeight)
    ctx.strokeStyle=color
    ctx.stroke();
    ctx.beginPath();
-   ctx.moveTo(e.clientX,e.clientY)
+   console.log((e.clientX- this.offsetLeft)*this.width/this.clientWidth,e.clientX)
+   ctx.moveTo((e.clientX- this.offsetLeft)*this.width/this.clientWidth,(e.clientY-this.offsetTop)*this.height/this.clientHeight)
 }
 canvas.addEventListener("mousedown",()=>{ k=true;
    draw()})
